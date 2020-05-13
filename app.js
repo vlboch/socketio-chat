@@ -3,6 +3,7 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
 server.listen(process.env.PORT || 4000);
+console.log(process.env.PORT);
 // WARNING: app.listen(80) will NOT work here!
 
 app.get('/', (req, res) => {

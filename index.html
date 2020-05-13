@@ -32,6 +32,7 @@
       <script src="/socket.io/socket.io.js"></script>
       
       <script>
+        console.log(window.location.host)
         const socket = io.connect(window.location.host);
         const sendMsgBtn = document.getElementById("button-addon2");
         const msgBar = document.getElementById("msg-area");
